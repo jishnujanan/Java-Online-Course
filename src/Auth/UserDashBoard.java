@@ -27,8 +27,8 @@ public class UserDashBoard extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        dashboardLabel = new javax.swing.JLabel();
+        coachesLabel = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
@@ -53,9 +53,9 @@ public class UserDashBoard extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        editProfileButton = new javax.swing.JButton();
+        myCoursesButton = new javax.swing.JButton();
+        allCoursesButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -65,18 +65,18 @@ public class UserDashBoard extends javax.swing.JFrame {
         jLabel1.setText("CourseWiz");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 64, -1, -1));
 
-        jLabel3.setFont(new java.awt.Font("Noto Sans", 1, 18)); // NOI18N
-        jLabel3.setText("Dashboard");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(612, 89, -1, -1));
+        dashboardLabel.setFont(new java.awt.Font("Noto Sans", 1, 18)); // NOI18N
+        dashboardLabel.setText("Dashboard");
+        getContentPane().add(dashboardLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(612, 89, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("Noto Sans", 1, 18)); // NOI18N
-        jLabel4.setText("Coaches");
-        jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
+        coachesLabel.setFont(new java.awt.Font("Noto Sans", 1, 18)); // NOI18N
+        coachesLabel.setText("Coaches");
+        coachesLabel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                jLabel4MousePressed(evt);
+                coachesLabelMousePressed(evt);
             }
         });
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(764, 89, -1, -1));
+        getContentPane().add(coachesLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(764, 89, -1, -1));
 
         jLabel5.setText("🔔");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(881, 86, 58, -1));
@@ -153,57 +153,57 @@ public class UserDashBoard extends javax.swing.JFrame {
         jLabel12.setOpaque(true);
         getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 553, 230, 138));
 
-        jButton1.setFont(new java.awt.Font("Noto Sans", 0, 14)); // NOI18N
-        jButton1.setText("Edit Profile");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        editProfileButton.setFont(new java.awt.Font("Noto Sans", 0, 14)); // NOI18N
+        editProfileButton.setText("Edit Profile");
+        editProfileButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                editProfileButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(565, 211, -1, -1));
+        getContentPane().add(editProfileButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(565, 211, -1, -1));
 
-        jButton2.setText("My Course");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        myCoursesButton.setText("My Course");
+        myCoursesButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                myCoursesButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 300, 150, -1));
+        getContentPane().add(myCoursesButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 300, 150, -1));
 
-        jButton3.setText("All Courses");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        allCoursesButton.setText("All Courses");
+        allCoursesButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                allCoursesButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(292, 300, 130, -1));
+        getContentPane().add(allCoursesButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(292, 300, 130, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void editProfileButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editProfileButtonActionPerformed
         // TODO add your handling code here:
         this.setVisible(false);
         new UserDetails().setVisible(true);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_editProfileButtonActionPerformed
 
-    private void jLabel4MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MousePressed
+    private void coachesLabelMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_coachesLabelMousePressed
         // TODO add your handling code here:
         this.setVisible(false);
         new CourseList().setVisible(true);
-    }//GEN-LAST:event_jLabel4MousePressed
+    }//GEN-LAST:event_coachesLabelMousePressed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void myCoursesButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_myCoursesButtonActionPerformed
         // TODO add your handling code here:
         this.setVisible(false);
         new CourseList().setVisible(true);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_myCoursesButtonActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void allCoursesButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_allCoursesButtonActionPerformed
         // TODO add your handling code here:
         this.setVisible(false);
         new CourseList().setVisible(true);
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_allCoursesButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -241,9 +241,10 @@ public class UserDashBoard extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton allCoursesButton;
+    private javax.swing.JLabel coachesLabel;
+    private javax.swing.JLabel dashboardLabel;
+    private javax.swing.JButton editProfileButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -260,8 +261,6 @@ public class UserDashBoard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -271,5 +270,6 @@ public class UserDashBoard extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
+    private javax.swing.JButton myCoursesButton;
     // End of variables declaration//GEN-END:variables
 }

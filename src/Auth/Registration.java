@@ -38,7 +38,7 @@ public class Registration extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        loginLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setSize(new java.awt.Dimension(340, 720));
@@ -112,15 +112,15 @@ public class Registration extends javax.swing.JFrame {
         jLabel5.setText("CourseWiz");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 10, -1, -1));
 
-        jLabel6.setFont(new java.awt.Font("Noto Sans", 0, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel6.setText("Login");
-        jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
+        loginLabel.setFont(new java.awt.Font("Noto Sans", 0, 14)); // NOI18N
+        loginLabel.setForeground(new java.awt.Color(255, 0, 0));
+        loginLabel.setText("Login");
+        loginLabel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                jLabel6MousePressed(evt);
+                loginLabelMousePressed(evt);
             }
         });
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 470, -1, -1));
+        jPanel1.add(loginLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 470, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -165,11 +165,11 @@ public class Registration extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jPanel1MousePressed
 
-    private void jLabel6MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MousePressed
+    private void loginLabelMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginLabelMousePressed
         // TODO add your handling code here:
         this.setVisible(false);
         new Login().setVisible(true);
-    }//GEN-LAST:event_jLabel6MousePressed
+    }//GEN-LAST:event_loginLabelMousePressed
 
     /**
      * @param args the command line arguments
@@ -216,8 +216,8 @@ public class Registration extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel loginLabel;
     // End of variables declaration//GEN-END:variables
 }

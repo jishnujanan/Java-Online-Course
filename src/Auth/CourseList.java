@@ -28,16 +28,16 @@ public class CourseList extends javax.swing.JFrame {
 
         jLabel6 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        dashboardLabel = new javax.swing.JLabel();
+        coachesLabel = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jLabel2 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
+        numRegisteredLabel = new javax.swing.JLabel();
+        numCompletedLabel = new javax.swing.JLabel();
+        numOngoingLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -48,16 +48,16 @@ public class CourseList extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(0, 0, 255));
         jLabel1.setText("CourseWiz");
 
-        jLabel3.setFont(new java.awt.Font("Noto Sans", 1, 18)); // NOI18N
-        jLabel3.setText("Dashboard");
-        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+        dashboardLabel.setFont(new java.awt.Font("Noto Sans", 1, 18)); // NOI18N
+        dashboardLabel.setText("Dashboard");
+        dashboardLabel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                jLabel3MousePressed(evt);
+                dashboardLabelMousePressed(evt);
             }
         });
 
-        jLabel4.setFont(new java.awt.Font("Noto Sans", 1, 18)); // NOI18N
-        jLabel4.setText("Coaches");
+        coachesLabel.setFont(new java.awt.Font("Noto Sans", 1, 18)); // NOI18N
+        coachesLabel.setText("Coaches");
 
         jLabel5.setText("🔔");
 
@@ -70,11 +70,11 @@ public class CourseList extends javax.swing.JFrame {
         jLabel8.setFont(new java.awt.Font("Noto Sans", 1, 14)); // NOI18N
         jLabel8.setText("Ongoing Courses");
 
-        jLabel9.setText("number_registered");
+        numRegisteredLabel.setText("number_registered");
 
-        jLabel10.setText("completed");
+        numCompletedLabel.setText("completed");
 
-        jLabel11.setText("ongoing");
+        numOngoingLabel.setText("ongoing");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -86,11 +86,11 @@ public class CourseList extends javax.swing.JFrame {
                         .addGap(40, 40, 40)
                         .addComponent(jLabel7)
                         .addGap(29, 29, 29)
-                        .addComponent(jLabel9)
+                        .addComponent(numRegisteredLabel)
                         .addGap(64, 64, 64)
                         .addComponent(jLabel2)
                         .addGap(33, 33, 33)
-                        .addComponent(jLabel10)
+                        .addComponent(numCompletedLabel)
                         .addGap(67, 67, 67)
                         .addComponent(jLabel8))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
@@ -98,16 +98,16 @@ public class CourseList extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(jLabel1)
                         .addGap(209, 209, 209)
-                        .addComponent(jLabel3)
+                        .addComponent(dashboardLabel)
                         .addGap(55, 55, 55)
-                        .addComponent(jLabel4)
+                        .addComponent(coachesLabel)
                         .addGap(43, 43, 43)
                         .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(0, 58, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(61, 61, 61)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel11)
+                    .addComponent(numOngoingLabel)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 808, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -121,17 +121,17 @@ public class CourseList extends javax.swing.JFrame {
                         .addComponent(jLabel5))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel1)
-                        .addComponent(jLabel3)
-                        .addComponent(jLabel4)
+                        .addComponent(dashboardLabel)
+                        .addComponent(coachesLabel)
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(jLabel7)
                     .addComponent(jLabel8)
-                    .addComponent(jLabel9)
-                    .addComponent(jLabel10)
-                    .addComponent(jLabel11))
+                    .addComponent(numRegisteredLabel)
+                    .addComponent(numCompletedLabel)
+                    .addComponent(numOngoingLabel))
                 .addGap(36, 36, 36)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 542, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -139,11 +139,11 @@ public class CourseList extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jLabel3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MousePressed
+    private void dashboardLabelMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dashboardLabelMousePressed
         // TODO add your handling code here:
         this.setVisible(false);
         new UserDashBoard().setVisible(true);
-    }//GEN-LAST:event_jLabel3MousePressed
+    }//GEN-LAST:event_dashboardLabelMousePressed
 
     /**
      * @param args the command line arguments
@@ -182,17 +182,17 @@ public class CourseList extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel coachesLabel;
+    private javax.swing.JLabel dashboardLabel;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel numCompletedLabel;
+    private javax.swing.JLabel numOngoingLabel;
+    private javax.swing.JLabel numRegisteredLabel;
     // End of variables declaration//GEN-END:variables
 }

@@ -31,13 +31,13 @@ public class Certificate extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
+        usernameLabel = new javax.swing.JLabel();
+        courseNameLabel = new javax.swing.JLabel();
+        companyNameLabel = new javax.swing.JLabel();
+        monthLabel = new javax.swing.JLabel();
+        dayLabel = new javax.swing.JLabel();
+        yearLabel = new javax.swing.JLabel();
+        managerLabel = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -63,34 +63,34 @@ public class Certificate extends javax.swing.JFrame {
         jLabel5.setText("🔔");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(876, 61, 36, -1));
 
-        jLabel7.setFont(new java.awt.Font("Noto Sans", 1, 14)); // NOI18N
-        jLabel7.setText("Username");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 410, 150, 30));
+        usernameLabel.setFont(new java.awt.Font("Noto Sans", 1, 14)); // NOI18N
+        usernameLabel.setText("Username");
+        getContentPane().add(usernameLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 410, 150, 30));
 
-        jLabel8.setFont(new java.awt.Font("Noto Sans", 1, 14)); // NOI18N
-        jLabel8.setText("Course Name");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 470, -1, -1));
+        courseNameLabel.setFont(new java.awt.Font("Noto Sans", 1, 14)); // NOI18N
+        courseNameLabel.setText("Course Name");
+        getContentPane().add(courseNameLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 470, -1, -1));
 
-        jLabel9.setFont(new java.awt.Font("Source Code Pro", 1, 14)); // NOI18N
-        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel9.setText("CourseWiz");
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 510, -1, -1));
+        companyNameLabel.setFont(new java.awt.Font("Source Code Pro", 1, 14)); // NOI18N
+        companyNameLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        companyNameLabel.setText("CourseWiz");
+        getContentPane().add(companyNameLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 510, -1, -1));
 
-        jLabel10.setFont(new java.awt.Font("Noto Sans", 1, 14)); // NOI18N
-        jLabel10.setText("month");
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 550, -1, 20));
+        monthLabel.setFont(new java.awt.Font("Noto Sans", 1, 14)); // NOI18N
+        monthLabel.setText("month");
+        getContentPane().add(monthLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 550, -1, 20));
 
-        jLabel11.setFont(new java.awt.Font("Noto Sans", 1, 14)); // NOI18N
-        jLabel11.setText("day");
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 550, -1, -1));
+        dayLabel.setFont(new java.awt.Font("Noto Sans", 1, 14)); // NOI18N
+        dayLabel.setText("day");
+        getContentPane().add(dayLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 550, -1, -1));
 
-        jLabel12.setFont(new java.awt.Font("Noto Sans", 1, 14)); // NOI18N
-        jLabel12.setText("jLabel12");
-        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 550, -1, -1));
+        yearLabel.setFont(new java.awt.Font("Noto Sans", 1, 14)); // NOI18N
+        yearLabel.setText("year");
+        getContentPane().add(yearLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 550, -1, -1));
 
-        jLabel13.setFont(new java.awt.Font("Architects Daughter", 2, 14)); // NOI18N
-        jLabel13.setText("Manager");
-        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 620, 80, -1));
+        managerLabel.setFont(new java.awt.Font("Architects Daughter", 2, 14)); // NOI18N
+        managerLabel.setText("Manager");
+        getContentPane().add(managerLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 620, 80, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Auth/certificate.jpg"))); // NOI18N
         jLabel2.setAlignmentY(0.0F);
@@ -137,18 +137,18 @@ public class Certificate extends javax.swing.JFrame {
 //    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel companyNameLabel;
+    private javax.swing.JLabel courseNameLabel;
+    private javax.swing.JLabel dayLabel;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel managerLabel;
+    private javax.swing.JLabel monthLabel;
+    private javax.swing.JLabel usernameLabel;
+    private javax.swing.JLabel yearLabel;
     // End of variables declaration//GEN-END:variables
 }
