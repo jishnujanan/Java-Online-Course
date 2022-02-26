@@ -27,6 +27,8 @@ public class Login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel6 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         UserNameTextField = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
@@ -34,6 +36,16 @@ public class Login extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         LoginButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        registerLabel = new javax.swing.JLabel();
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Auth/logo.png"))); // NOI18N
+        jLabel6.setText("jLabel6");
+
+        jLabel4.setFont(new java.awt.Font("Waree", 3, 36)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel4.setText("CourseWiz");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -48,10 +60,11 @@ public class Login extends javax.swing.JFrame {
                 UserNameTextFieldActionPerformed(evt);
             }
         });
-        jPanel1.add(UserNameTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(87, 85, 182, 47));
+        jPanel1.add(UserNameTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 180, 182, 47));
 
+        jLabel2.setFont(new java.awt.Font("Noto Sans", 1, 14)); // NOI18N
         jLabel2.setText("username");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(87, 62, 182, -1));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 200, 70, -1));
 
         PasswordTextField.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         PasswordTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -60,40 +73,54 @@ public class Login extends javax.swing.JFrame {
                 PasswordTextFieldActionPerformed(evt);
             }
         });
-        jPanel1.add(PasswordTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(87, 168, 182, 47));
+        jPanel1.add(PasswordTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 260, 182, 47));
 
+        jLabel3.setFont(new java.awt.Font("Noto Sans", 1, 14)); // NOI18N
         jLabel3.setText("passsword");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(87, 145, 182, -1));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 280, 80, -1));
 
+        LoginButton.setBackground(new java.awt.Color(191, 204, 219));
+        LoginButton.setFont(new java.awt.Font("Noto Sans", 0, 14)); // NOI18N
         LoginButton.setText("login");
         LoginButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LoginButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(LoginButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(138, 246, -1, -1));
+        jPanel1.add(LoginButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 350, 140, -1));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("LOGIN");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(69, 13, 228, 31));
-        jLabel1.getAccessibleContext().setAccessibleName("LOGIN");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 110, 228, 31));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Auth/logo.png"))); // NOI18N
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, -1, -1));
+
+        jLabel5.setFont(new java.awt.Font("Waree", 3, 36)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel5.setText("CourseWiz");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 10, -1, -1));
+
+        registerLabel.setFont(new java.awt.Font("Noto Sans", 0, 14)); // NOI18N
+        registerLabel.setForeground(new java.awt.Color(255, 0, 0));
+        registerLabel.setText("Register");
+        registerLabel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                registerLabelMousePressed(evt);
+            }
+        });
+        jPanel1.add(registerLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 430, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(51, 51, 51)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 351, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(58, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 460, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 424, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(56, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 520, Short.MAX_VALUE)
         );
 
         pack();
@@ -104,6 +131,14 @@ public class Login extends javax.swing.JFrame {
         username = UserNameTextField.getText();
         password=PasswordTextField.getText();
         System.out.println(username+"   "+password );
+        int check = 1;
+        // check if user with password exist
+        if(check == 1){
+            this.setVisible(false);
+            new UserDashBoard().setVisible(true);
+        }else{
+            System.err.println("Invalid usename or password");
+        }
     }//GEN-LAST:event_LoginButtonActionPerformed
 
     private void PasswordTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasswordTextFieldActionPerformed
@@ -115,6 +150,13 @@ public class Login extends javax.swing.JFrame {
         // TODO add your handling code here:
         username = UserNameTextField.getText();
     }//GEN-LAST:event_UserNameTextFieldActionPerformed
+
+    private void registerLabelMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_registerLabelMousePressed
+        // TODO add your handling code here:
+        System.err.println("jlabel 8");
+        this.setVisible(false);
+        new Registration().setVisible(true);
+    }//GEN-LAST:event_registerLabelMousePressed
 
     /**
      * @param args the command line arguments
@@ -158,6 +200,11 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel registerLabel;
     // End of variables declaration//GEN-END:variables
 }
