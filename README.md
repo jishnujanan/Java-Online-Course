@@ -1,1 +1,1 @@
-# Java-Online-Course
+# Java-Online-Course-Manager
